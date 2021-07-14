@@ -134,6 +134,7 @@ img, a.img {
 /* Paragraph element styling */
 p {
     display: flex;
+    flex-wrap: wrap;
     border-radius: var(--bend);
     margin: var(--space);
     padding: var(--space);
@@ -190,6 +191,28 @@ footer {
     margin: 0 auto;
 }
 
+/* Card1 sizing */
+#card1 img {
+    flex: 0 1 300px;
+    height: 300px;
+    width: 300px;
+    margin: var(--space);
+    margin: 10px;
+    border-radius: var(--bend);
+    box-shadow: 0 0 30px #000;
+    position: relative;
+    justify-items: center;
+    right: 10px;
+    top: 0px;
+    
+}
+
+/* Card1: cancel width increase on mouse hover */
+#card1 img:hover {
+    width: 300px;
+}
+
+
 /* Picture ID at the top postion */
 #my-picture {
     position: absolute;
@@ -210,7 +233,7 @@ footer {
     flex-direction: column;
     margin: var(--space);
     position: absolute;
-    left: 25%;
+    left: 15%;
     top: 25px;
     z-index: 2;
 }
