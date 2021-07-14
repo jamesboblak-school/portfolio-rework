@@ -45,13 +45,13 @@ nav {
 /* Headings element styling */
 h1 {
     padding: var(--space);
-    color:blanchedalmond;
+    color: blanchedalmond;
     font-size: 175%;
 }
 
 h2 {
     padding: 0 10px 10px 10px;
-    color:blanchedalmond;
+    color: blanchedalmond;
     margin-top: 35px;
     font-size: 125%;
 }
@@ -67,22 +67,23 @@ h4 {
     color: black;
     font-size: 75%;
 }
+
 /* I was not able to get these to function porperly, so I commented them out.  I was able to get some benefit from flex-wrap for small devices. */
 @media screen and (min-width: 992px) {
     body {
         flex: 0 0 100%;
         max-width: 100%;
         flex-wrap: wrap;
-        }
     }
+}
 
 @media screen and (min-width: 768px) {
     body {
         flex: 0 0 100%;
         max-width: 100%;
         flex-wrap: wrap;
-        }
     }
+}
 
 
 /* Header Link color*/
@@ -108,11 +109,12 @@ article {
     color: mediumseagreen;
     border-radius: var(--bend);
     width: 100%;
-    
+
 }
 
 /* Image element and image element within anchor container */
-img, a.img {
+img,
+a.img {
     flex: 0 1 200px;
     height: 200px;
     width: 200px;
@@ -161,14 +163,14 @@ footer {
 /* Card description class mouse-click listener */
 .card-description:active {
     box-shadow: 0 0 10px #000 inset;
-  }
+}
 
-  /* Card description class mouse-clicked listener */
+/* Card description class mouse-clicked listener */
 .card-description:focus {
     background-color: #772014;
     color: black;
-  }
-    
+}
+
 /* Card description class container   */
 .card-description {
     position: relative;
@@ -177,7 +179,7 @@ footer {
     padding: var(--space);
     border-radius: var(--bend);
     background-size: 100%;
-    background-color:rgb(3, 3, 59);
+    background-color: rgb(3, 3, 59);
 }
 
 /* Card image class flex container */
@@ -204,7 +206,7 @@ footer {
     justify-items: center;
     right: 10px;
     top: 0px;
-    
+
 }
 
 /* Card1: cancel width increase on mouse hover */
@@ -247,6 +249,5 @@ footer {
     border-radius: var(--bend);
     padding: var(--space);
     top: 320px;
-    background-color: darkslategrey;   
+    background-color: darkslategrey;
 }
-
