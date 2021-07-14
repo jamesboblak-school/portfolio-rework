@@ -1,0 +1,229 @@
+/* Global Variables */
+:root {
+
+    /* Box corner radius variable */
+    --bend: 10px;
+
+    /* Overall spacing variable */
+    --space: 10px;
+
+    /* Default font size */
+    --size: 20px:
+}
+
+/* Body element flex container */
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Header element flex container */
+header {
+    display: flex;
+    display: block;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(32, 6, 51);
+    color: black;
+    z-index: 1;
+}
+
+/* Navigation bar element flex container */
+nav {
+    display: flex;
+    display: inline-flex;
+    flex-direction: row;
+    width: 65%;
+    top: 35px;
+    flex-wrap: wrap;
+    z-index: 3;
+}
+
+/* Headings element styling */
+h1 {
+    padding: var(--space);
+    color:blanchedalmond;
+    font-size: 175%;
+}
+
+h2 {
+    padding: 0 10px 10px 10px;
+    color:blanchedalmond;
+    margin-top: 35px;
+    font-size: 125%;
+}
+
+h3 {
+    padding: 0 10px 0 10px;
+    color: blue;
+    font-size: 100%;
+}
+
+h4 {
+    padding: 0 10px 0 10px;
+    color: black;
+    font-size: 75%;
+}
+/* I was not able to get these to function porperly, so I commented them out.  I was able to get some benefit from flex-wrap for small devices. */
+@media screen and (min-width: 992px) {
+    body {
+        flex: 0 0 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+        }
+    }
+
+@media screen and (min-width: 768px) {
+    body {
+        flex: 0 0 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+        }
+    }
+
+
+/* Header Link color*/
+header:link {
+    color: blue;
+}
+
+/* Mouse-over anchor element listener */
+a:hover {
+    color: darkblue;
+    font-size: 120%;
+}
+
+/* Card flex element container */
+article {
+    display: flex;
+    position: relative;
+    flex: 1 1 10px;
+    max-width: 40%;
+    display: block;
+    margin: var(--space);
+    background-color: darkgreen;
+    color: mediumseagreen;
+    border-radius: var(--bend);
+    width: 100%;
+    
+}
+
+/* Image element and image element within anchor container */
+img, a.img {
+    flex: 0 1 200px;
+    height: 200px;
+    width: 200px;
+    margin: var(--space);
+    margin: 10px;
+    border-radius: var(--bend);
+    box-shadow: 0 0 30px #000;
+    position: relative;
+    justify-items: center;
+    right: 10px;
+    top: -20px;
+}
+
+/* Card mouse-over class listener */
+.card-image:hover {
+    width: 220px;
+}
+
+/* Paragraph element styling */
+p {
+    display: flex;
+    border-radius: var(--bend);
+    margin: var(--space);
+    padding: var(--space);
+    color: white;
+    background-color: black;
+    text-align: center;
+    min-width: 100px;
+}
+
+/* Footer element styling*/
+footer {
+    background-color: darkslateblue;
+    position: fixed;
+    left: 40%;
+    bottom: 0px;
+}
+
+/* Card description class mouse-over listener */
+.card-description:hover {
+    background-color: #772014;
+    color: #fff;
+}
+
+/* Card description class mouse-click listener */
+.card-description:active {
+    box-shadow: 0 0 10px #000 inset;
+  }
+
+  /* Card description class mouse-clicked listener */
+.card-description:focus {
+    background-color: #772014;
+    color: black;
+  }
+    
+/* Card description class container   */
+.card-description {
+    position: relative;
+    font-size: var(--size);
+    margin: var(--space);
+    padding: var(--space);
+    border-radius: var(--bend);
+    background-size: 100%;
+    background-color:rgb(3, 3, 59);
+}
+
+/* Card image class flex container */
+.card-image {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin: var(--space);
+    margin: 0 auto;
+}
+
+/* Picture ID at the top postion */
+#my-picture {
+    position: absolute;
+}
+
+/* About ME ID flex container */
+#about {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    position: fixed;
+    top: 160px;
+}
+
+/* Contact Me ID flex container */
+#contact {
+    display: flex;
+    flex-direction: column;
+    margin: var(--space);
+    position: absolute;
+    left: 25%;
+    top: 25px;
+    z-index: 2;
+}
+
+/* Main ID flex container */
+#main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    border-radius: var(--bend);
+    padding: var(--space);
+    top: 320px;
+    background-color: darkslategrey;   
+}
+
