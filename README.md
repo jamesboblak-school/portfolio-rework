@@ -2,19 +2,28 @@
 ## Welcome
 [Link to open app in browser](https://jamesboblak.github.io/portfolio-rework/)  
 
+
 James Boblak, full stack developer, portfolio  
 ![Demo .gif](./images/James-Boblak-Bio_gif3.gif)  
+
+## Page Parts
 <!-- Header image -->
+<details><summary>Header</summary>
 ![James Boblak, full stack developer, portfolio](./images/JamesBoblak_header.png)\
-The Header features links to project details within the page, as well as contact information.  
+The Header features links to project details within the page, as well as contact information. 
+</details> 
 
 <!-- Body information -->
+<details><summary>Body</summary>
 ![Body of page](./images/James-Boblak_body_scrunch.png)  
 The body of the page auto-sizes down to accommodate any screen size without sacrificing text or image size.  
+</details>
 
 <!-- Card information -->
+<details><summary>Cards</summary>
 ![Cards](./images/James-Boblak_cards.png)  
 Each of the code titles in the Project cards links directly to its GitHub repository, and the images link to the pages themselves.  The last two are presently placholders, which link to my portfolio page.  
+</details>
 
 <!-- Statement of purpose -->
 ## Purpose
